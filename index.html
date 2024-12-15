@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duty Saving Calculator -EOU, or EPCG + AA or DBK</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Default Styles (Desktop) */
+        header {
+            height: 150px;
+            color: rgba(255, 255, 255, 1);
+            background-image: linear-gradient(rgba(25, 1, 76, 1), rgba(40, 0, 125, 1));
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .book-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+        }
+
+        #title {
+            font-family: "Open Sans";
+            font-weight: 400;
+            width: 40%;
+            text-align: center;
+            line-height: 42px;
+            font-size: 32px;
+        }
+
+        .logo-div {
+            width: 30%;
+        }
+
+        #logo {
+            width: 150px;
+            height: 35px;
+        }
+
+        #book-title {
+            width: 120px;
+            font-weight: 400;
+            position: relative;
+            right: -14px;
+            top: 30px;
+            font-family: "Inria Serif";
+            font-size: 14px;
+            text-align: end;
+            line-height: 14px;
+        }
+
+        #book {
+            width: 150px;
+        }
+
+        main {
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin: 4ch 0;
+            gap: 20px;
+        }
+
+        #bg {
+            font-family: "Inria Sans", sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            color: rgba(23, 1, 69, 1);
+            line-height: 43.57px;
+        }
+
+        main section p {
+            font-family: "Inria Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19.36px;
+            text-align: left;
+            color: rgba(74, 74, 74, 1);
+            text-decoration-skip-ink: none;
+            font-variation-settings: 'slnt' 0;
+        }
+
+        main section {
+            display: flex;
+            align-items: start;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        .calculate {
+            width: 150px;
+            height: 40px;
+            background-image: linear-gradient(rgba(25, 1, 76, 1), rgba(40, 0, 125, 1));
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: "Inria Sans", sans-serif;
+            color: rgba(255, 255, 255, 1);
+            line-height: 20px;
+            font-weight: 500;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        footer {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgba(25, 1, 76, 1), rgba(40, 0, 125, 1));
+        }
+
+        footer p {
+            font-family: "Open Sans";
+            color: rgba(255, 255, 255, 1);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        /* Tablet Styles */
+        @media (max-width: 1024px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                height: auto;
+                padding: 20px;
+                gap: 15px;
+            }
+
+            #title {
+                font-size: 36px;
+                line-height: 42px;
+                width: 100%;
+            }
+
+            .book-div,
+            .logo-div {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            #book {
+                width: 150px;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            #bg {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            #book-title {
+                right: -26px;
+                top: 22px;
+                text-align: center;
+                line-height: 16px;
+            }
+
+            footer p {
+                text-align: center;
+                padding: 20px;
+            }
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                padding: 20px;
+            }
+
+            #title {
+                font-size: 30px;
+                line-height: 44px;
+                width: 100%;
+            }
+
+            .book-div,
+            .logo-div {
+                width: 100%;
+            }
+
+            #book-title {
+                font-size: 12px;
+                top: 8px;
+            }
+
+            #book {
+                width: 80px;
+            }
+
+            main {
+                margin: 2ch 0;
+                padding: 20px;
+            }
+
+            #bg {
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            main section p {
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            .calculate {
+                width: 100px;
+                height: 35px;
+                font-size: 14px;
+                margin-top: 26px;
+            }
+
+            footer p {
+                font-size: 10px;
+                text-align: center;
+                line-height: 14px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header  -->
+    <header>
+        <div class="logo-div">
+            <img id="logo" src="img/logo.png" alt="logo">
+        </div>
+        <h1 id="title">Duty Saving Calculator EOU, or EPCG + AA or DBK</h1>
+        <div class="book-div">
+            <p id="book-title">Brought to you by the authors of</p>
+            <img id="book" src="img/books.png" alt="books">
+        </div>
+    </header>
+
+    <!-- Main Section  -->
+    <main>
+        <h2 id="bg">Background</h2>
+        <section>
+            <p><strong>Export oriented unit scheme (EOU)</strong> or <strong>Export Promotion Capital goods
+                    (EPCG)</strong> + <strong>advance authorisation (AA)</strong>
+                or Drawback Scheme allow import of capital goods, raw materials, consumables without payment of duties
+                of customs in terms of respective customs exemption notifications. The <strong>EOU</strong> scheme
+                allows import of even
+                the used capital goods.</p>
+            <p>All the schemes mandate fulfilment of export obligation unlike in case of <strong>MOOWR</strong>. The
+                schemes have a
+                mechanism to neutralize the duties of customs involved even in domestically procured goods as the inward
+                supplies received by the <strong>EOU, AA holder, EPCG</strong> holder is treated as deemed export. In
+                case of EOUs when
+                they sale the imported capital goods in DTA they are entitled to claim depreciation in the transaction
+                value at the time of import for the purpose of payment of applicable duties of customs provided they
+                have fulfilled the export obligation. In case of <strong>EPCG</strong> the no duties are payable on the
+                capital goods on
+                DTA sale once the export obligation is discharged.</p>
+            <p>Further, units having substantial raw material imports can accrue savings in working capital costs by way
+                of deferment of Customs duties on imports.</p>
+            <p>Further, <strong>EOU, AA & EPCG</strong> holder are entitled to export incentives viz. <strong>Remission
+                    of duties & taxes on
+                    export products (RoDTEP)</strong> on export of the goods eligible for such benefit. However, they
+                are not
+                entitled for the <strong>All Industry Rate of duty drawback (‘AIR’)</strong>. Operating as a regular
+                unit availing AIR is
+                more beneficial when majority of the raw materials used in export goods are domestically sourced.</p>
+            <button class="calculate">Calculate</button>
+        </section>
+    </main>
+    <!-- footer  -->
+    <footer>
+        <p>Optitax’s MOOWR decision matrix/Duty Saving Calculator factors above aspects & provides a broad-level
+            analysis which will enable the user to take a considered decision.</p>
+    </footer>
+</body>
+
+</html>

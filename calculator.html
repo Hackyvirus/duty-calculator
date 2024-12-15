@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duty Saving Calculator -EOU, or EPCG + AA or DBK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h2>Calculator</h2>
+    </header>
+
+    <!-- title -->
+    <h1 id="title">Duty Saving Calculator - EOU, or EPCG + AA or DBK</h1>
+
+    <!-- main Calculator -->
+    <main>
+        <nav>
+            <div>
+                <h2 id="first-nav-item" class="nav-item active">Gross/Individual</h2>
+            </div>
+            <div>
+                <h2 id="second-nav-item" class="nav-item">Capital Goods</h2>
+            </div>
+            <div>
+                <h2 id="third-nav-item" class="nav-item">Raw Material</h2>
+            </div>
+            <div>
+                <h2 id="fourth-nav-item" class="nav-item">Common Question</h2>
+            </div>
+        </nav>
+        <section id="main-section" class="">
+            <!-- Inputs -->
+            <div id="cal-input">
+                <!-- Choose Gross OR Individual -->
+                <div id="gross-indi-box" class="gross-indi-box active-box">
+                    <h2 class="first-title" id="gross-or-indi">Goods are in Gross or Individual form?</h2>
+                    <div class="btn-container1">
+                        <button id="gross" class="btn1">Gross</button>
+                        <button id="indi" class="btn1">Individual</button>
+                    </div>
+                    <h2 class="first-title" id="domestic-and-imported">Do We have domestic and imported Goods?</h2>
+                    <div class="btn-container1">
+                        <button id="domestic" class="btn1">Yes</button>
+                        <button id="imported" class="btn1">No</button>
+                    </div>
+                    <button id="Gross-Individual" class="next-btn">Next</button>
+                </div>
+
+                <!-- Capital Goods Box que-->
+                <div id="cap-good-que" class="inactive-box ">
+                    <h2 class="second-title" id="imported-goods">Imported Capital Goods</h2>
+                    <div class="input-grid">
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of BCD</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="second-title inactive-box" id="domestic-goods-title">Domestic Capital Goods</h2>
+                    <div id="domestic-goods-box" class="input-grid inactive-box">
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <button id="cap-que-good-next" class="next-btn">Next</button>
+                </div>
+
+                <!-- Capital Goods Table  -->
+                <div id="cap-table-container" class="inactive-box cap-table-container">
+                    <h2 class="second-title">Capital Goods Imported</h2>
+                    <table id="capitalGoodsImportedTable">
+                        <thead>
+                            <tr>
+                                <th>BCD rate (%)</th>
+                                <th>Import value (CIF)</th>
+                                <th>AIDC rate <br />(if applicable)</th>
+                                <th>ADD rate <br />(if applicable)</th>
+                                <th>Safegourd Duty<br />(if applicable)</th>
+                                <th>Countervailing Duty<br />(if applicable)</th>
+                                <th>IGST Amount</th>
+                                <th>Disposal of capital goods after end of useful life</th>
+                                <th>Intended period of Use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="rate">
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select1">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others</option>
+                                            <input autocomplete="off" style="width: 50%" id="userInputrate1"
+                                                class="input-select" type="text" />
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taaa" class="input-text" name="Assessable"
+                                        oninput="formatNumber('taaa')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidcab" class="input-text"
+                                        name="aidcRateValue" oninput="formatNumber('taidcab')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddac" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('tddac')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgda" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgda')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwda" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwda')" />
+                                </td>
+
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstad" class="input-text"
+                                        name="igstRateValue" oninput="formatNumber('tigstad')" />
+                                </td>
+
+                                <td class="rate">
+                                    <select id="ams" autocomplete="off" class="input-11" name="Machine1">
+                                        <option>Choose</option>
+                                        <option value="Sale in DTA">Sale in DTA</option>
+                                        <option value="Destroy">Destroy</option>
+                                        <option value="Export">Export</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="aip" oninput="formatNumber('aip')"
+                                        name="intendedPeriodOfUse" style="display: none;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rate">
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select2">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others</option>
+                                            <input autocomplete="off" style="width: 50%" id="userInputrate2"
+                                                class="input-select" type="text" />
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taba" oninput="formatNumber('taba')"
+                                        class="input-text" name="Assessable" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidcbb" class="input-text"
+                                        name="aidcRateValue" oninput="formatNumber('taidcbb')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddbc" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('tddbc')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdb" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdb')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdb" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdb')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstbd" class="input-text"
+                                        name="igstRateValue" oninput="formatNumber('tigstbd')" />
+                                </td>
+
+                                <td class="rate">
+                                    <select id="bms" autocomplete="off" class="input-11" name="Machine1">
+                                        <option>Choose</option>
+                                        <option value="Sale in DTA">Sale in DTA</option>
+                                        <option value="Destroy">Destroy</option>
+                                        <option value="Export">Export</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="bip" oninput="formatNumber('bip')"
+                                        name="intendedPeriodOfUse" style="display: none;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rate">
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select3">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others</option>
+                                            <input autocomplete="off" style="width: 50%" id="userInputrate3"
+                                                class="input-select" type="text" />
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" oninput="formatNumber('taca')" id="taca"
+                                        class="input-text" name="Assessable" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidccb" class="input-text"
+                                        name="aidcRateValue" oninput="formatNumber('taidccb')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddcc" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('tddcc')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdc" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdc')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdc" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdc')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstcd" class="input-text"
+                                        name="igstRateValue" oninput="formatNumber('tigstcd')" />
+                                </td>
+
+                                <td class="rate">
+                                    <select id="cms" autocomplete="off" class="input-11" name="Machine1">
+                                        <option>Choose</option>
+                                        <option value="Sale in DTA">Sale in DTA</option>
+                                        <option value="Destroy">Destroy</option>
+                                        <option value="Export">Export</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cip" oninput="formatNumber('cip')"
+                                        name="intendedPeriodOfUse" style="display: none;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rate">
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select4">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others</option>
+                                            <input autocomplete="off" style="width: 50%" id="userInputrate4"
+                                                class="input-select" type="text" />
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tada" oninput="formatNumber('tada')"
+                                        class="input-text" name="Assessable" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidcdb" class="input-text"
+                                        name="aidcRateValue" oninput="formatNumber('taidcdb')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tdddc" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('tdddc')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdd" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdd')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdd" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdd')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstdd" class="input-text"
+                                        name="igstRateValue" oninput="formatNumber('tigstdd')" />
+                                </td>
+
+                                <td class="rate">
+                                    <select id="dms" autocomplete="off" class="input-11" name="Machine1">
+                                        <option>Choose</option>
+                                        <option value="Sale in DTA">Sale in DTA</option>
+                                        <option value="Destroy">Destroy</option>
+                                        <option value="Export">Export</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="dip" name="intendedPeriodOfUse"
+                                        oninput="formatNumber('dip')" style="display: none;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rate">
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select5">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others</option>
+                                            <input autocomplete="off" style="width: 50%" id="userInputrate5"
+                                                class="input-select" type="text" />
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" oninput="formatNumber('taea')" id="taea"
+                                        class="input-text" name="Assessable" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidceb" class="input-text"
+                                        name="aidcRateValue" oninput="formatNumber('taidceb')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddec" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('tddec')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgde" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgde')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwde" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwde')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigsted" class="input-text"
+                                        oninput="formatNumber('tigsted')" name="igstRateValue" />
+                                </td>
+
+                                <td class="rate">
+                                    <select id="ems" autocomplete="off" class="input-11" name="Machine1">
+                                        <option>Choose</option>
+                                        <option value="Sale in DTA">Sale in DTA</option>
+                                        <option value="Destroy">Destroy</option>
+                                        <option value="Export">Export</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" oninput="formatNumber('eip')" id="eip"
+                                        name="intendedPeriodOfUse" style="display: none;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 id="cap-good-table-title" class="second-title inactive-box">Capital Goods Domestic</h2>
+                    <table id="capitalGoodsDomesticTable" class="inactive-box">
+                        <thead>
+                            <tr>
+                                <th>BCD rate (%)</th>
+                                <th>Import value (CIF)</th>
+                                <th>AIDC rate <br />(if applicable)</th>
+                                <th>ADD rate <br />(if applicable)</th>
+                                <th>Safegourd Duty<br />(if applicable)</th>
+                                <th>Countervailing Duty<br />(if applicable)</th>
+                                <th>IGST Amount</th>
+                                <th>Disposal of capital goods after end of useful life</th>
+                                <th>Intended period of Use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="rate">
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select1">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others</option>
+                                            <input autocomplete="off" style="width: 50%" id="userInputrate1"
+                                                class="input-select" type="text" />
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taaa" class="input-text" name="Assessable"
+                                        oninput="formatNumber('taaa')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidcab" class="input-text"
+                                        name="aidcRateValue" oninput="formatNumber('taidcab')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddac" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('tddac')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgda" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgda')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwda" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwda')" />
+                                </td>
+
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstad" class="input-text"
+                                        name="igstRateValue" oninput="formatNumber('tigstad')" />
+                                </td>
+
+                                <td class="rate">
+                                    <select id="ams" autocomplete="off" class="input-11" name="Machine1">
+                                        <option>Choose</option>
+                                        <option value="Sale in DTA">Sale in DTA</option>
+                                        <option value="Destroy">Destroy</option>
+                                        <option value="Export">Export</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="aip" oninput="formatNumber('aip')"
+                                        name="intendedPeriodOfUse" style="display: none;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rate">
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select2">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others</option>
+                                            <input autocomplete="off" style="width: 50%" id="userInputrate2"
+                                                class="input-select" type="text" />
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taba" oninput="formatNumber('taba')"
+                                        class="input-text" name="Assessable" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidcbb" class="input-text"
+                                        name="aidcRateValue" oninput="formatNumber('taidcbb')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddbc" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('tddbc')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdb" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdb')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdb" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdb')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstbd" class="input-text"
+                                        name="igstRateValue" oninput="formatNumber('tigstbd')" />
+                                </td>
+
+                                <td class="rate">
+                                    <select id="bms" autocomplete="off" class="input-11" name="Machine1">
+                                        <option>Choose</option>
+                                        <option value="Sale in DTA">Sale in DTA</option>
+                                        <option value="Destroy">Destroy</option>
+                                        <option value="Export">Export</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="bip" oninput="formatNumber('bip')"
+                                        name="intendedPeriodOfUse" style="display: none;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rate">
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select3">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others</option>
+                                            <input autocomplete="off" style="width: 50%" id="userInputrate3"
+                                                class="input-select" type="text" />
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" oninput="formatNumber('taca')" id="taca"
+                                        class="input-text" name="Assessable" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidccb" class="input-text"
+                                        name="aidcRateValue" oninput="formatNumber('taidccb')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddcc" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('tddcc')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdc" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdc')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdc" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdc')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstcd" class="input-text"
+                                        name="igstRateValue" oninput="formatNumber('tigstcd')" />
+                                </td>
+
+                                <td class="rate">
+                                    <select id="cms" autocomplete="off" class="input-11" name="Machine1">
+                                        <option>Choose</option>
+                                        <option value="Sale in DTA">Sale in DTA</option>
+                                        <option value="Destroy">Destroy</option>
+                                        <option value="Export">Export</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cip" oninput="formatNumber('cip')"
+                                        name="intendedPeriodOfUse" style="display: none;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rate">
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select4">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others</option>
+                                            <input autocomplete="off" style="width: 50%" id="userInputrate4"
+                                                class="input-select" type="text" />
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tada" oninput="formatNumber('tada')"
+                                        class="input-text" name="Assessable" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidcdb" class="input-text"
+                                        name="aidcRateValue" oninput="formatNumber('taidcdb')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tdddc" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('tdddc')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdd" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdd')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdd" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdd')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstdd" class="input-text"
+                                        name="igstRateValue" oninput="formatNumber('tigstdd')" />
+                                </td>
+
+                                <td class="rate">
+                                    <select id="dms" autocomplete="off" class="input-11" name="Machine1">
+                                        <option>Choose</option>
+                                        <option value="Sale in DTA">Sale in DTA</option>
+                                        <option value="Destroy">Destroy</option>
+                                        <option value="Export">Export</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="dip" name="intendedPeriodOfUse"
+                                        oninput="formatNumber('dip')" style="display: none;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="rate">
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select5">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others</option>
+                                            <input autocomplete="off" style="width: 50%" id="userInputrate5"
+                                                class="input-select" type="text" />
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" oninput="formatNumber('taea')" id="taea"
+                                        class="input-text" name="Assessable" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidceb" class="input-text"
+                                        name="aidcRateValue" oninput="formatNumber('taidceb')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddec" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('tddec')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgde" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgde')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwde" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwde')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigsted" class="input-text"
+                                        oninput="formatNumber('tigsted')" name="igstRateValue" />
+                                </td>
+
+                                <td class="rate">
+                                    <select id="ems" autocomplete="off" class="input-11" name="Machine1">
+                                        <option>Choose</option>
+                                        <option value="Sale in DTA">Sale in DTA</option>
+                                        <option value="Destroy">Destroy</option>
+                                        <option value="Export">Export</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" oninput="formatNumber('eip')" id="eip"
+                                        name="intendedPeriodOfUse" style="display: none;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="cap-table-good-next" class="next-btn">Next</button>
+                </div>
+
+                <!-- Raw Materials Box que -->
+                <div id="raw-good-que" class="inactive-box">
+                    <h2 class="second-title" id="imported-raw-goods">Imported Raw Materials</h2>
+                    <div id="raw-imported-box" class="input-grid">
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="domestic-raw-goods-title" class="second-title inactive-box">Domestic Raw Materials</h2>
+                    <div id="raw-domestic-box" class="input-grid inactive-box">
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <button id="raw-material-que-next" class="next-btn">Next</button>
+                </div>
+
+                <!-- Raw Materials Table  -->
+                <div id="raw-table-container" class="raw-table-container inactive-box">
+                    <h2 class="second-title">Raw Materials Imported</h2>
+                    <table id="rawmaterialTable">
+                        <thead>
+                            <tr>
+                                <th>BCD rate (%)</th>
+                                <th>Assessable Value</th>
+                                <th>AIDC rate (if applicable)</th>
+                                <th>ADD Rate(if applicable) </th>
+                                <th>IGST Amount</th>
+                                <th>Safegourd Duty<br />(if applicable)</th>
+                                <th>Countervailing Duty<br />(if applicable)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select6">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others <input autocomplete="off" style="width:50%;;"
+                                                    id="userInputrate6" class="input-select" type="text" /></option>
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taaa2" oninput="formatNumber('taaa2')"
+                                        class="input-text" name="Assessable">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidcab2"
+                                        oninput="formatNumber('taidcab2')" class="input-text" name="aidcRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddac2" oninput="formatNumber('tddac2')"
+                                        class="input-text" name="addRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstad2"
+                                        oninput="formatNumber('tigstad2')" class="input-text" name="igstRateValue">
+                                </td>
+
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdf" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdf')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdf" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdf')" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select7">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others <input autocomplete="off" style="width:50%;;"
+                                                    id="userInputrate7" class="input-select" type="text" /></option>
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taba2" class="input-text"
+                                        oninput="formatNumber('taba2')" name="Assessable">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidcbb2"
+                                        oninput="formatNumber('taidcbb2')" class="input-text" name="aidcRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddbc2" oninput="formatNumber('tddbc2')"
+                                        class="input-text" name="addRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstbd2"
+                                        oninput="formatNumber('tigstbd2')" class="input-text" name="igstRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdg" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdg')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdg" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdg')" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select8">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others <input autocomplete="off" style="width:50%;;"
+                                                    id="userInputrate8" class="input-select" type="text" /></option>
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taca2" class="input-text"
+                                        oninput="formatNumber('taca2')" name="Assessable">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidccb2" class="input-text"
+                                        oninput="formatNumber('taidccb2')" name="aidcRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddcc2" class="input-text"
+                                        oninput="formatNumber('tddcc2')" name="addRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstcd2" class="input-text"
+                                        oninput="formatNumber('tigstcd2')" name="igstRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdh" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdh')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdh" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdh')" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select9">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others <input autocomplete="off" style="width:50%;;"
+                                                    id="userInputrate9" class="input-select" type="text" /></option>
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tada2" oninput="formatNumber('tada2')"
+                                        class="input-text" name="Assessable">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidcdb2"
+                                        oninput="formatNumber('taidcdb2')" class="input-text" name="aidcRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tdddc2" oninput="formatNumber('tdddc2')"
+                                        class="input-text" name="addRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstdd2"
+                                        oninput="formatNumber('tigstdd2')" class="input-text" name="igstRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdi" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdi')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdi" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdi')" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select10">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others <input autocomplete="off" style="width:50%;;"
+                                                    id="userInputrate10" class="input-select" type="text" /></option>
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taea2" oninput="formatNumber('taea2')"
+                                        class="input-text" name="Assessable">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidceb2"
+                                        oninput="formatNumber('taidceb2')" class="input-text" name="aidcRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddec2" oninput="formatNumber('tddec2')"
+                                        class="input-text" name="addRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigsted2"
+                                        oninput="formatNumber('tigsted2')" class="input-text" name="igstRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdj" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdj')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdj" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdj')" />
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                    <h2 class="second-title" id="raw-domestic-table-title">Raw Materials Domestic</h2>
+                    <table id="rawmaterialDomesticTable">
+                        <thead>
+                            <tr>
+                                <th>BCD rate (%)</th>
+                                <th>Assessable Value</th>
+                                <th>AIDC rate (if applicable)</th>
+                                <th>ADD Rate(if applicable) </th>
+                                <th>IGST Amount</th>
+                                <th>Safegourd Duty<br />(if applicable)</th>
+                                <th>Countervailing Duty<br />(if applicable)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select6">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others <input autocomplete="off" style="width:50%;;"
+                                                    id="userInputrate6" class="input-select" type="text" /></option>
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taaa2" oninput="formatNumber('taaa2')"
+                                        class="input-text" name="Assessable">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidcab2"
+                                        oninput="formatNumber('taidcab2')" class="input-text" name="aidcRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddac2" oninput="formatNumber('tddac2')"
+                                        class="input-text" name="addRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstad2"
+                                        oninput="formatNumber('tigstad2')" class="input-text" name="igstRateValue">
+                                </td>
+
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdf" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdf')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdf" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdf')" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select7">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others <input autocomplete="off" style="width:50%;;"
+                                                    id="userInputrate7" class="input-select" type="text" /></option>
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taba2" class="input-text"
+                                        oninput="formatNumber('taba2')" name="Assessable">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidcbb2"
+                                        oninput="formatNumber('taidcbb2')" class="input-text" name="aidcRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddbc2" oninput="formatNumber('tddbc2')"
+                                        class="input-text" name="addRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstbd2"
+                                        oninput="formatNumber('tigstbd2')" class="input-text" name="igstRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdg" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdg')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdg" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdg')" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select8">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others <input autocomplete="off" style="width:50%;;"
+                                                    id="userInputrate8" class="input-select" type="text" /></option>
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taca2" class="input-text"
+                                        oninput="formatNumber('taca2')" name="Assessable">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidccb2" class="input-text"
+                                        oninput="formatNumber('taidccb2')" name="aidcRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddcc2" class="input-text"
+                                        oninput="formatNumber('tddcc2')" name="addRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstcd2" class="input-text"
+                                        oninput="formatNumber('tigstcd2')" name="igstRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdh" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdh')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdh" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdh')" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select9">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others <input autocomplete="off" style="width:50%;;"
+                                                    id="userInputrate9" class="input-select" type="text" /></option>
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tada2" oninput="formatNumber('tada2')"
+                                        class="input-text" name="Assessable">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidcdb2"
+                                        oninput="formatNumber('taidcdb2')" class="input-text" name="aidcRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tdddc2" oninput="formatNumber('tdddc2')"
+                                        class="input-text" name="addRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigstdd2"
+                                        oninput="formatNumber('tigstdd2')" class="input-text" name="igstRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdi" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdi')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdi" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdi')" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <select name="two-point-five" id="percentage-select10">
+                                            <option>Choose</option>
+
+                                            <option value="5">5%</option>
+                                            <option value="7.5">7.5%</option>
+                                            <option value="10">10%</option>
+                                            <option value="15">15%</option>
+                                            <option value="20">20%</option>
+                                            <option value="25">25%</option>
+                                            <option value="others">others <input autocomplete="off" style="width:50%;;"
+                                                    id="userInputrate10" class="input-select" type="text" /></option>
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taea2" oninput="formatNumber('taea2')"
+                                        class="input-text" name="Assessable">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="taidceb2"
+                                        oninput="formatNumber('taidceb2')" class="input-text" name="aidcRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tddec2" oninput="formatNumber('tddec2')"
+                                        class="input-text" name="addRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="tigsted2"
+                                        oninput="formatNumber('tigsted2')" class="input-text" name="igstRateValue">
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="sgdj" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('sgdj')" />
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="text" id="cwdj" class="input-text"
+                                        name="addRateValue" oninput="formatNumber('cwdj')" />
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                    <button id="raw-material-table-next" class="next-btn">Next</button>
+                </div>
+
+                <!-- common Question Box -->
+                <div id="common-questions" class="inactive-box">
+                    <h2 class="second-title" id="imported-goods">Common Question</h2>
+                    <div class="input-grid">
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container year-container">
+                                    <p>Years</p>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container percentage-conatainer">
+                                    %
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container year-container">
+                                    Days
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <h2 class="input-title">Gross value of import (CIF)</h2>
+                            <div class="input-tag">
+                                <div class="ruppees-container">
+                                    <svg width="10" height="15" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.80469 3.76611L7.44531 5.00049H0.195312L0.554688 3.76611H7.80469ZM4.55469 12.3599L0.421875 7.53174L0.414062 6.56299H2.32031C2.8724 6.56299 3.32812 6.47184 3.6875 6.28955C4.05208 6.10205 4.32552 5.84945 4.50781 5.53174C4.6901 5.21403 4.78125 4.85726 4.78125 4.46143C4.78125 4.01872 4.69531 3.6307 4.52344 3.29736C4.35156 2.95882 4.08073 2.6958 3.71094 2.5083C3.34635 2.31559 2.86719 2.21924 2.27344 2.21924H0.210938L0.578125 0.984863H2.27344C3.17969 0.984863 3.92708 1.12288 4.51562 1.39893C5.10938 1.66976 5.55208 2.06559 5.84375 2.58643C6.13542 3.10726 6.28125 3.73747 6.28125 4.47705C6.28125 5.11247 6.15885 5.68278 5.91406 6.18799C5.67448 6.68799 5.27604 7.08122 4.71875 7.36768C4.16667 7.65413 3.42188 7.79736 2.48438 7.79736L6.32812 12.2661V12.3599H4.55469ZM7.80469 0.984863L7.44531 2.21924H1.60156L1.96094 0.984863H7.80469Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </div>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="next-btn">Calculate</button>
+                </div>
+            </div>
+            </div>
+
+            <!-- FAQs Section -->
+            <aside id="FAQs" class="FAQs">
+                <h2 class="faq-title">FAQs</h2>
+                <div class="faq-div">
+                    <div class="img-q">
+                        <h2 class="question">What is the MOOWR scheme? </h2>
+                        <img id="faq1" class="add" src="img/plus.png" alt="add">
+                    </div>
+                    <p id="faq1a" class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptas!</p>
+
+                </div>
+                <div class="faq-div">
+                    <div class="img-q">
+                        <h2 class="question">What is the MOOWR scheme? </h2>
+                        <img id="faq2" class="add" src="img/plus.png" alt="add">
+                    </div>
+                    <p id="faq2a" class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptas!</p>
+
+                </div>
+                <div class="faq-div">
+                    <div class="img-q">
+                        <h2 class="question">What is the MOOWR scheme? </h2>
+                        <img class="add" src="img/plus.png" alt="add">
+                    </div>
+                    <p class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptas!</p>
+
+                </div>
+                <div class="faq-div">
+                    <div class="img-q">
+                        <h2 class="question">What is the MOOWR scheme? </h2>
+                        <img class="add" src="img/plus.png" alt="add">
+                    </div>
+                    <p class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptas!</p>
+
+                </div>
+                <div class="faq-div">
+                    <div class="img-q">
+                        <h2 class="question">What is the MOOWR scheme? </h2>
+                        <img class="add" src="img/plus.png" alt="add">
+                    </div>
+                    <p class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptas!</p>
+
+                </div>
+                <div class="faq-div">
+                    <div class="img-q">
+                        <h2 class="question">What is the MOOWR scheme? </h2>
+                        <img class="add" src="img/plus.png" alt="add">
+                    </div>
+                    <p class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptas!</p>
+
+                </div>
+                <div class="faq-div">
+                    <div class="img-q">
+                        <h2 class="question">What is the MOOWR scheme? </h2>
+                        <img class="add" src="img/plus.png" alt="add">
+                    </div>
+                    <p class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptas!</p>
+
+                </div>
+                <div class="faq-div">
+                    <div class="img-q">
+                        <h2 class="question">What is the MOOWR scheme? </h2>
+                        <img class="add" src="img/plus.png" alt="add">
+                    </div>
+                    <p class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptas!</p>
+
+                </div>
+                <div class="faq-div">
+                    <div class="img-q">
+                        <h2 class="question">What is the MOOWR scheme? </h2>
+                        <img class="add" src="img/plus.png" alt="add">
+                    </div>
+                    <p class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptas!</p>
+
+                </div>
+                <div class="faq-div">
+                    <div class="img-q">
+                        <h2 class="question">What is the MOOWR scheme? </h2>
+                        <img class="add" src="img/plus.png" alt="add">
+                    </div>
+                    <p class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptas!</p>
+
+                </div>
+            </aside>
+        </section>
+    </main>
+    <h2 class="manual"><a href="">User Manual for Tax Calculator</a></h2>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha384-UG8ao2jwOWB7/oDdObZc6ItJmwUkR/PfMyt9Qs5AwX7PsnYn1CRKCTWyncPTWvaS"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgba(246, 247, 251, 1)
+}
+
+header {
+    height: 90px;
+    background-image: linear-gradient(rgba(37, 0, 110, 1), rgba(22, 0, 66, 1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+header h2 {
+    font-family: "Open Sans";
+    color: rgba(255, 255, 255, 1);
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+/* main calculator */
+
+main {
+    border: 1px solid rgba(42, 58, 141, 0.18);
+    width: 85%;
+    height: max-content;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 1);
+}
+
+#title {
+    width: 85%;
+    margin: 0 auto;
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 26px;
+    line-height: 44px;
+}
+
+nav {
+    display: flex;
+    height: 50px;
+    align-items: start;
+    justify-content: start;
+    border-bottom: 1px solid rgba(42, 58, 141, 0.18);
+}
+
+nav div {
+    height: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 21px;
+    cursor: pointer;
+    align-content: center;
+    text-align: center;
+    width: 150px;
+}
+
+
+
+#main-section {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#cal-input {
+    flex: 2;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cap-good-que {
+    /* display: flex; */
+    justify-content: start;
+    width: 100%;
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#raw-good-que {
+    /* display: flex; */
+    justify-content: start;
+    width: 100%;
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#common-questions {
+    /* display: flex; */
+    justify-content: start;
+    width: 100%;
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.input-grid {
+    display: grid;
+    gap: 25px;
+    gap: 25px;
+    width: 100%;
+    grid-template-columns: auto auto;
+}
+
+aside {
+    flex: 1;
+    background: rgba(231, 238, 255, 1);
+    border-radius: 4px;
+    border: 1px solid rgba(42, 58, 141, 0.18);
+    padding: 15px;
+    height: max-content;
+    box-sizing: border-box;
+}
+
+.input-box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: max-content;
+    justify-content: start;
+    gap: 10px;
+}
+
+.input-tag {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+
+input {
+    width: 100%;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
+.ruppees-container {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px 0 0 4px;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+}
+
+.year-container {
+    width: 80px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.percentage-conatainer {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.input-title {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+
+/* aside  */
+
+.faq-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+.faq-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    min-height: 35px;
+    flex-direction: column;
+    border-bottom: 2px solid rgba(150, 150, 150, 1);
+}
+
+.img-q {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.question {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.34px;
+    color: rgba(56, 56, 56, 1);
+}
+
+.ans {
+    font-family: "Urbanist", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    display: none;
+    margin-bottom: 15px;
+    line-height: 16.34px;
+    color: rgba(56, 56, 56, 1);
+}
+
+.add {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#btn-container {
+    width: 100%;
+}
+
+
+.next-btn {
+    all: unset;
+    background: rgba(26, 1, 78, 1);
+    width: 90px;
+    border-radius: 10px;
+    height: 35px;
+    font-family: "Open Sans";
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    align-self: center;
+    margin: 20px 0;
+}
+
+.inactive {
+    display: none;
+}
+
+.gross-indi-box {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+    display: none;
+}
+
+.first-title {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.second-title {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 20px;
+}
+
+.btn-container1 {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.btn1 {
+    all: unset;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    line-height: 21px;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid rgba(154, 154, 154, 1);
+    padding: 8px 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.active {
+    border-bottom: 2px solid rgba(7, 107, 207, 1);
+    background: rgba(235, 244, 253, 1);
+    color: rgba(7, 107, 207, 1);
+}
+
+.manual {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: underline;
+    color: rgba(34, 48, 116, 1);
+    width: 85%;
+    margin: auto;
+    padding-top: 5px;
+}
+
+/* Cap tables */
+.cap-table-container{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+}
+.raw-table-container{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+}
+.active-table-layout {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.active-faq-layout {
+    width: 100%;
+    gap: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+table label {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+
+select {
+    color: rgba(0, 177, 18, 1);
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: -0.08399999886751175px;
+    text-align: center;
+}
+
+.input-select {
+    display: none;
+}
+.active-select{
+    width: 50%;
+}
+select {
+    text-align: center;
+    border-right-width: 1px;
+    letter-spacing: 0em;
+    line-height: 1.2em;
+    font-weight: 400;
+    background: transparent;
+    border: transparent;
+
+}
+
+table input[type="text"] {
+    text-align: center;
+    border: 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+table input[type="text"]:focus {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    outline: 0;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: rgba(251, 251, 251, 1);
+    color: rgba(0, 0, 0, 1);
+    font-size: 12px;
+    width: 12%;
+    font-weight: 600;
+    line-height: 15px;
+    text-align: center;
+}
+
+.rate {
+    background: rgba(236, 255, 238, 1);
+    color: rgba(0, 177, 18, 1);
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: -0.08399999886751175px;
+    text-align: center;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.inactive-box{
+    display: none;
+}
+.active-box{
+    display: flex;
+}
